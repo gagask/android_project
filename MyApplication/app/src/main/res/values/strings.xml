@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GymBreak</string>
+    <string-array name="training">
+        <item>Выбирай давай!</item>>
+        <item>Поднимание рук вверх и в стороны</item>>
+        <item>Поднимание рук вверх и в стороны</item>>
+        <item>Поднимание рук вверх и в стороны</item>>
+    </string-array>>
+
+</resources>

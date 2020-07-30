@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonTraining"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@drawable/my_button"
+        android:enabled="false"
+        android:text="Тренировка"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonStatistic"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonStatistic"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@drawable/my_button"
+        android:text="Статистика"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonTraining" />
+
+    <com.example.myapplication.MySpinner
+        android:id="@+id/spinner_my"
+        style="@android:style/Widget.DeviceDefault.DropDownItem.Spinner"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/spinner_bg"
+        android:dropDownWidth="412dp"
+        android:dropDownVerticalOffset="48dp"
+        android:forceDarkAllowed="false"
+        android:popupBackground="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/buttonStatistic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="86dp"
+        android:layout_height="30dp"
+        android:text="Все хорошо"
+        app:layout_constraintBottom_toTopOf="@+id/buttonTraining"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_my" />
+</androidx.constraintlayout.widget.ConstraintLayout>
